@@ -1,17 +1,16 @@
 export JAVA_HOME=`/usr/libexec/java_home`
-PLAY_HOME=~/dev/env/play
-#export M2_HOME=/opt/apache/maven
-#export ANT_HOME=/opt/apache/ant
+PATH=$PATH:$JAVA_HOME/bin
 
-export PATH=$PATH:$JAVA_HOME/bin
-#export PATH=$PATH:$M2_HOME/bin
-#export PATH=$PATH:$ANT_HOME/bin
+export PLAY_HOME=$HOME/dev/env/play
+PATH=$PATH:$PLAY_HOME
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 PATH=$PATH:/usr/local/share/npm/bin # npm binaries
-PATH=$PATH:$PLAY_HOME
+
+export EDITOR=vim
+
+export PATH
 
 ulimit -n 10000 # set max number of open files. In OS X this limit is set to 256 by default, which is very low
 
-source /Users/ivan/.rvm/scripts/rvm
+source $HOME/.rvm/scripts/rvm
