@@ -1,3 +1,8 @@
+# list files
 alias ls='ls -hFG'
-alias ll='ls -l'
-alias la='ll -a'
+alias l='ls -l'
+alias la='l -a'
+
+# management
+alias reload_aliases="source ~/dev/yatskevich/99-personal/dotfiles/zsh/aliases"
+alias ea="$EDITOR ~/dev/yatskevich/99-personal/dotfiles/zsh/aliases && reload_aliases"
