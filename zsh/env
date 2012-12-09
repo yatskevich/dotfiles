@@ -11,6 +11,4 @@ export EDITOR=vim
 
 export PATH
 
-ulimit -n 10000 # set max number of open files. In OS X this limit is set to 256 by default, which is very low
-
 source $HOME/.rvm/scripts/rvm
