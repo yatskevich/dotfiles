@@ -1,0 +1,4 @@
+ZSH="__zsh_config_path__"
+
+source "$ZSH/config"
+source "$ZSH/aliases"
