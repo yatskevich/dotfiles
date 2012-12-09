@@ -4,5 +4,8 @@ alias l='ls -l'
 alias la='l -a'
 
 # management
-alias reload_aliases="source ~/dev/yatskevich/99-personal/dotfiles/zsh/aliases"
-alias ea="$EDITOR ~/dev/yatskevich/99-personal/dotfiles/zsh/aliases && reload_aliases"
+alias reload_aliases="source $HOME/dev/yatskevich/99-personal/dotfiles/zsh/aliases"
+alias ea="$EDITOR $HOME/dev/yatskevich/99-personal/dotfiles/zsh/aliases && reload_aliases"
+
+# git
+alias g='clear && git status'
