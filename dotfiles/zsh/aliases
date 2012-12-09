@@ -5,6 +5,7 @@ alias la='l -a'
 
 # management
 alias reload_aliases="source $HOME/dev/yatskevich/99-personal/dotfiles/zsh/aliases"
+# Edit Aliases
 alias ea="$EDITOR $HOME/dev/yatskevich/99-personal/dotfiles/zsh/aliases && reload_aliases"
 
 # git
