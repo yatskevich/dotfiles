@@ -5,8 +5,10 @@ alias la='l -a'
 
 # management
 alias reload_aliases="source $ZSH/aliases"
-# Edit Aliases
+alias reload_config="source $ZSH/config"
+
 alias ea="$EDITOR $ZSH/aliases && reload_aliases"
+alias ec="$EDITOR $ZSH/config && reload_config"
 
 # git
 alias g='clear && git status'
