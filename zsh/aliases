@@ -2,6 +2,7 @@
 alias ls='ls -hFG'
 alias l='ls -l'
 alias la='l -a'
+alias oa='open -a The\ Archive\ Browser'
 
 # navigation
 alias ..="cd .."
