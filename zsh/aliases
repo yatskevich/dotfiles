@@ -22,3 +22,6 @@ alias ee="$EDITOR $ZSH/env && reload_env"
 
 # git
 alias g='clear && git status'
+# gradle
+alias grb='gradle build'
+alias grc='gradle clean'
