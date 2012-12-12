@@ -1,11 +1,5 @@
 # TODO: fetch from git
 
-DOTFILES=$PWD
-
-# create .zshrc with proper config location
-# and .zshenv symlink 
-_zsh_config_dir="$DOTFILES/zsh"
-
 function backup {
   if [[ -L $1 ]]; then
     unlink "$1"
@@ -13,6 +7,17 @@ function backup {
     mv "$1" "$1.orig.`date +%s`"
   fi
 }
+
+DOTFILES=$PWD
+
+_git_config_dir="$DOTFILES/git"
+# add global git config
+backup "$HOME/.gitconfig"
+ln -s "$_git_config_dir/config" "$HOME/.gitconfig"
+
+# create .zshrc with proper config location
+# and .zshenv symlink 
+_zsh_config_dir="$DOTFILES/zsh"
 
 backup "$HOME/.zshenv"
 ln -s "$_zsh_config_dir/env" "$HOME/.zshenv" 
@@ -26,3 +31,5 @@ chsh -s `which zsh`
 # run zsh
 /usr/bin/env zsh
 source ~/.zshrc
+
+

@@ -1,0 +1,5 @@
+[user]
+	name = Ivan Yatskevich
+	email = ivan@yatskevich.com
+[core]
+	ignorecase = false
