@@ -1,8 +1,12 @@
+fpath=($ZSH/functions $fpath)
+
 # Set up the prompt
 
 autoload -Uz promptinit
 promptinit
-prompt adam1
+setopt prompt_subst
+# available colors are black, red, green, yellow, blue, magenta, cyan and white
+prompt yatskevich magenta yellow blue white
 
 setopt histignorealldups sharehistory
 
