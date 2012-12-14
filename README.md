@@ -10,3 +10,10 @@ Tools on OS X
     ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
     ```
 * [QLStephen](http://whomwah.github.com/qlstephen/) QuickLook plugin
+
+
+Command line tips
+-----------------
+
+* `!$` - last argument of previously executed command
+* `!!` - previously executed command with all parameters
