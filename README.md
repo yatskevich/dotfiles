@@ -17,3 +17,17 @@ Command line tips
 
 * `!$` - last argument of previously executed command
 * `!!` - previously executed command with all parameters
+
+OS X tips
+---------
+
+* change hostname
+
+    ```sh
+    sudo scutil --set HostName yatskevich.local
+    ```
+* set file visibility bit
+
+    ```sh
+    SetFile -a v <filename>
+    ```
