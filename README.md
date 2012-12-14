@@ -10,7 +10,11 @@ Tools on OS X
     ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
     ```
 * [QLStephen](http://whomwah.github.com/qlstephen/) QuickLook plugin
+* tree
 
+    ```sh
+    brew install tree
+    ```
 
 Command line tips
 -----------------
