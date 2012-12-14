@@ -21,8 +21,11 @@ prompt_yatskevich_setup () {
   # %b - Information about the current branch.
   # %a - An identifier, that describes the action. Only makes sense in actionformats.
 
-  zstyle ':vcs_info:*' actionformats '%F{$py_color4}(%s)%f-%F{$py_color2}[%b|%a%]%f '
-  zstyle ':vcs_info:*' formats '%F{$py_color4}(%s)-%F{$py_color2}[%b]%f '
+  zstyle ':vcs_info:*' actionformats '%F{$py_color4}(%s)%f-%F{$py_color2}[%b%u%c|%a%]%f '
+  zstyle ':vcs_info:*' formats '%F{$py_color4}(%s)-%F{$py_color2}[%b%u%c]%f '
+  zstyle ':vcs_info:git:*' check-for-changes true
+  zstyle ':vcs_info:git:*' stagedstr '!'
+  zstyle ':vcs_info:git:*' unstagedstr '*'
 
   add-zsh-hook precmd prompt_yatskevich_precmd
 }
