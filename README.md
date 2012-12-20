@@ -20,6 +20,11 @@ Tools on OS X
     ```sh
     brew install coreutils
     ```
+* [Ruby Version Manager](https://rvm.io/rvm/install/)
+
+    ```sh
+    curl -L https://get.rvm.io | bash -s stable --ruby
+    ```
 
 Command line tips
 -----------------
