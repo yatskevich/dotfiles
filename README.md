@@ -15,6 +15,11 @@ Tools on OS X
     ```sh
     brew install tree
     ```
+* coreutils
+
+    ```sh
+    brew install coreutils
+    ```
 
 Command line tips
 -----------------
