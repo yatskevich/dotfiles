@@ -25,6 +25,14 @@ Tools on OS X
     ```sh
     curl -L https://get.rvm.io | bash -s stable --ruby
     ```
+* apple-gcc42
+
+   ```sh
+   brew update
+   brew tap homebrew/dupes
+   brew install autoconf automake apple-gcc42
+   rvm pkg install openssl
+   ```
 
 Command line tips
 -----------------
