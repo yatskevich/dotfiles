@@ -13,5 +13,3 @@ PATH=$PATH:/usr/local/sbin
 export EDITOR=vim
 
 export PATH
-
-source $HOME/.rvm/scripts/rvm
