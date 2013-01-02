@@ -1,7 +1,24 @@
-" =============== Pathogen Initialization ===============
-" This loads all the plugins in ~/.vim/bundle
-" Use tpope's pathogen plugin to manage all other plugins
+" Pathogen Initialization 
+runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
 
-  runtime bundle/tpope-vim-pathogen/autoload/pathogen.vim
-  call pathogen#infect()
-  call pathogen#helptags()
+" General Config 
+set number		" show line number
+set visualbell t_vb=	" no sound, no delay
+set autoread		" reload files changed outside vim
+
+" http://items.sjbach.com/319/configuring-vim-right
+set hidden		" manage multiple buffers effectively
+set title		" set terminal title
+set scrolloff=3		" keep more context around cursor
+set ruler		" show position info in right-bottom corner
+
+syntax on		" enable syntax highligting
+filetype on		
+filetype plugin on
+filetype indent on
+
+" http://www.pixelbeat.org/settings/.vimrc
+set nowrap		" don't wrap long lines
+set ignorecase		" case-insensitive search 
