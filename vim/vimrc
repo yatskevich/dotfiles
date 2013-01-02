@@ -16,7 +16,7 @@ set ruler		" show position info in right-bottom corner
 
 syntax on		" enable syntax highligting
 set background=dark
-colorscheme zenburn
+colorscheme molokai
 
 filetype on		
 filetype plugin on
