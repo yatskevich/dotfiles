@@ -15,6 +15,9 @@ set scrolloff=3		" keep more context around cursor
 set ruler		" show position info in right-bottom corner
 
 syntax on		" enable syntax highligting
+set background=dark
+colorscheme zenburn
+
 filetype on		
 filetype plugin on
 filetype indent on
