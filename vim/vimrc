@@ -25,3 +25,9 @@ filetype indent on
 " http://www.pixelbeat.org/settings/.vimrc
 set nowrap		" don't wrap long lines
 set ignorecase		" case-insensitive search 
+
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+set shiftround
+set nojoinspaces
