@@ -1,8 +1,7 @@
-Environment configuration notes
-===============================
+# Environment configuration notes
 
-Tools on OS X
-------------- 
+## Tools on OS X
+
 * [Command line tools for OS X](https://developer.apple.com/downloads/index.action)
 * [Homebrew](http://mxcl.github.com/homebrew/)
 
@@ -34,14 +33,12 @@ Tools on OS X
    rvm pkg install openssl
    ```
 
-Command line tips
------------------
+## Command line tips
 
 * `!$` - last argument of previously executed command
 * `!!` - previously executed command with all parameters
 
-OS X tips
----------
+## OS X tips
 
 * change hostname
 
@@ -53,3 +50,10 @@ OS X tips
     ```sh
     SetFile -a v <filename>
     ```
+* NTFS read/write (inspired by [this post](http://crosstown.coolestguyplanettech.com/os-x/44-how-to-write-to-a-ntfs-drive-from-os-x))
+
+    ```sh
+    brew install fuse4x
+    brew install ntfs-3g
+    ```
+and follow the instructions provided by both.
