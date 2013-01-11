@@ -3,3 +3,6 @@
 	email = ivan@yatskevich.com
 [core]
 	ignorecase = false
+[alias]
+	co = checkout
+	hist = log --oneline --graph --decorate --color
