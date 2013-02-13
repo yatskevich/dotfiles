@@ -12,4 +12,7 @@ PATH=$PATH:/usr/local/sbin
 
 export EDITOR=vim
 
+DEV_PATH=$HOME/dev/env
+PATH=$PATH:$DEV_PATH/es/bin
+
 export PATH
