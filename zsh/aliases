@@ -23,6 +23,7 @@ alias ee="$EDITOR $ZSH/env && reload_env"
 # git
 alias g='clear && git status'
 alias gf='git fetch'
+alias gb='git branch'
 
 # gradle
 alias grb='gradle build'
@@ -30,3 +31,8 @@ alias grc='gradle clean'
 
 # OS X
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+# misc
+alias pag='ps aux | grep'
+alias ki='kill -9'
+alias ski='sudo kill -9'
