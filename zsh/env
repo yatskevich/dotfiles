@@ -1,20 +1,16 @@
-# Fix $PATH for homebrew
-homebrew=/usr/local/bin:/usr/local/sbin
-export PATH=$homebrew:$PATH
-
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-PATH=$PATH:$JAVA_HOME/bin
-
-export PLAY_HOME=$HOME/dev/env/play
-PATH=$PATH:$PLAY_HOME
-
-PATH=$PATH:/usr/local/share/npm/bin # npm binaries
-
-PATH=$PATH:/usr/local/sbin 
-
 export EDITOR=vim
 
-DEV_PATH=$HOME/dev/env
-PATH=$PATH:$DEV_PATH/mongodb/bin
+HOMEBREW=/usr/local/sbin
+NPM_PATH=/usr/local/share/npm/bin # npm binaries
+export PATH=$HOMEBREW:$NPM_PATH:$PATH
 
-export PATH
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
+DEV_ENV=$HOME/dev/env
+export PLAY_HOME=$DEV_ENV/play
+
+APPS=$APPS:$JAVA_HOME/bin
+APPS=$APPS:$PLAY_HOME
+APPS=$APPS:$DEV_ENV/mongodb/bin
+
+export PATH=$PATH:$APPS

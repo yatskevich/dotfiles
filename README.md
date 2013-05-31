@@ -40,6 +40,10 @@
 
 ## OS X tips
 
+* reorder paths in `/etc/paths` 
+
+Seems to be the most correct way to put `/usr/local/bin` before `/usr/bin` in zsh. [Detailed discussion](https://github.com/sorin-ionescu/prezto/issues/381)
+
 * change hostname
 
     ```sh
