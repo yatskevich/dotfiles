@@ -1,4 +1,7 @@
-export JAVA_HOME=`/usr/libexec/java_home`
+# prefer local binaries (e.g. installed by Brew) over /usr/bin
+PATH=/usr/local/bin:$PATH
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 PATH=$PATH:$JAVA_HOME/bin
 
 export PLAY_HOME=$HOME/dev/env/play
@@ -13,6 +16,6 @@ PATH=$PATH:/usr/local/sbin
 export EDITOR=vim
 
 DEV_PATH=$HOME/dev/env
-PATH=$PATH:$DEV_PATH/es/bin
+PATH=$PATH:$DEV_PATH/mongodb/bin
 
 export PATH
