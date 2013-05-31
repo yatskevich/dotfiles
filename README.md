@@ -19,10 +19,10 @@
     ```sh
     brew install coreutils
     ```
-* [Ruby Version Manager](https://rvm.io/rvm/install/)
+* rbenv
 
     ```sh
-    curl -L https://get.rvm.io | bash -s stable --ruby
+    brew install rbenv ruby-build
     ```
 * apple-gcc42
 
