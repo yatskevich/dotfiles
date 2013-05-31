@@ -1,3 +1,4 @@
 ulimit -n 10000 # set max number of open files. In OS X this limit is set to 256 by default, which is very low
 
-source $HOME/.rvm/scripts/rvm
+# enable rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
