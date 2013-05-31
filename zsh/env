@@ -7,8 +7,6 @@ PATH=$PATH:$JAVA_HOME/bin
 export PLAY_HOME=$HOME/dev/env/play
 PATH=$PATH:$PLAY_HOME
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 PATH=$PATH:/usr/local/share/npm/bin # npm binaries
 
 PATH=$PATH:/usr/local/sbin 
