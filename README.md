@@ -38,4 +38,4 @@
 * `!$` - last argument of previously executed command
 * `!!` - previously executed command with all parameters
 
-## [OS X tips](/wiki/OS-X)
+## [OS X tips](https://github.com/yatskevich/dotfiles/wiki/OS-X)
