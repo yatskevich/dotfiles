@@ -38,26 +38,4 @@
 * `!$` - last argument of previously executed command
 * `!!` - previously executed command with all parameters
 
-## OS X tips
-
-* reorder paths in `/etc/paths` 
-
-Seems to be the most correct way to put `/usr/local/bin` before `/usr/bin` in zsh. [Detailed discussion](https://github.com/sorin-ionescu/prezto/issues/381)
-
-* change hostname
-
-    ```sh
-    sudo scutil --set HostName yatskevich.local
-    ```
-* set file visibility bit
-
-    ```sh
-    SetFile -a v <filename>
-    ```
-* NTFS read/write (inspired by [this post](http://crosstown.coolestguyplanettech.com/os-x/44-how-to-write-to-a-ntfs-drive-from-os-x))
-
-    ```sh
-    brew install fuse4x
-    brew install ntfs-3g
-    ```
-and follow the instructions provided by both.
+## [OS X tips](wiki/OS-X)
