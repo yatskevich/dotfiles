@@ -33,6 +33,12 @@
    rvm pkg install openssl
    ```
 
+* ssh-copy-id
+
+```sh
+brew install ssh-copy-id
+```
+
 ## Command line tips
 
 * `!$` - last argument of previously executed command
