@@ -35,9 +35,9 @@
 
 * ssh-copy-id
 
-```sh
-brew install ssh-copy-id
-```
+   ```sh
+   brew install ssh-copy-id
+   ```
 
 ## Command line tips
 
