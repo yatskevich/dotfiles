@@ -38,7 +38,13 @@
    ```sh
    brew install ssh-copy-id
    ```
+   
+* nmap - Security Scanner   
 
+    ```sh
+    brew install nmap
+    ```
+    
 ## Command line tips
 
 * `!$` - last argument of previously executed command
