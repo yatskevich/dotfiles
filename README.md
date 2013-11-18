@@ -9,21 +9,19 @@
     ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
     ```
 * [QLStephen](http://whomwah.github.com/qlstephen/) QuickLook plugin
-* tree
+
+* brew packages
 
     ```sh
+    brew install zsh
     brew install tree
-    ```
-* coreutils
-
-    ```sh
     brew install coreutils
+    brew install rbenv ruby-build # rbenv
+    brew install ssh-copy-id
+    brew install nmap # Security Scanner 
+                 
     ```
-* rbenv
 
-    ```sh
-    brew install rbenv ruby-build
-    ```
 * apple-gcc42
 
    ```sh
@@ -32,18 +30,6 @@
    brew install autoconf automake apple-gcc42
    rvm pkg install openssl
    ```
-
-* ssh-copy-id
-
-   ```sh
-   brew install ssh-copy-id
-   ```
-   
-* nmap - Security Scanner   
-
-    ```sh
-    brew install nmap
-    ```
     
 ## Command line tips
 
