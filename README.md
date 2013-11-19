@@ -14,11 +14,12 @@
 
     ```sh
     brew install zsh
-    brew install tree
+    brew install tree wget
     brew install coreutils
     brew install rbenv ruby-build # rbenv
     brew install ssh-copy-id
     brew install nmap # Security Scanner 
+    brew install node
                  
     ```
 
