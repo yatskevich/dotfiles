@@ -20,7 +20,12 @@
     brew install ssh-copy-id
     brew install nmap # Security Scanner 
     brew install node
-                 
+       
+    # Cask http://caskroom.io/
+    brew install caskroom/cask/brew-cask
+    
+    # Docker
+    brew cask install boot2docker
     ```
 
 * apple-gcc42
