@@ -3,3 +3,6 @@ ZSH="__zsh_config_path__"
 source "$ZSH/config"
 source "$ZSH/aliases"
 source "$ZSH/system"
+
+source "$ZSH/antigen/antigen.zsh"
+source "$ZSH/antigen_config"
