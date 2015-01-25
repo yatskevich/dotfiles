@@ -3,11 +3,7 @@
 ## Tools on OS X
 
 * [Command line tools for OS X](https://developer.apple.com/downloads/index.action)
-* [Homebrew](http://mxcl.github.com/homebrew/)
-
-    ```sh
-    ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-    ```
+* [Homebrew](http://brew.sh/#install)
 * [QLStephen](http://whomwah.github.com/qlstephen/) QuickLook plugin
 
 * brew packages
