@@ -10,6 +10,7 @@
 
     ```sh
     brew install zsh
+    brew install autojump
     brew install tree wget
     brew install coreutils
     brew install rbenv ruby-build # rbenv
