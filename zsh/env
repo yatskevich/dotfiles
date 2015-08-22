@@ -1,7 +1,7 @@
 export EDITOR=vim
 
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-export SBT_OPTS='-Xms2G -Xmx4G -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256M'
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export SBT_OPTS='-Xms2G -Xmx4G -Xss1M -XX:+CMSClassUnloadingEnabled'
 
 # homebrew binaries
 HOMEBREW=/usr/local/sbin
@@ -15,3 +15,7 @@ CHEF_DK=$HOME/.chefdk/gem/ruby/2.1.0/bin:/opt/chefdk/bin
 export GOPATH=$HOME/dev/yatskevich/00-research/go
 
 export PATH=$HOMEBREW:$NPM_PATH:$CHEF_DK:$GOPATH/bin:$PATH
+
+use-java () {
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.$1`
+}
