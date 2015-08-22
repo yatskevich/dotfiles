@@ -7,3 +7,5 @@
 [alias]
 	co = checkout
 	hist = log --oneline --graph --decorate --color
+[push]
+	default = simple
