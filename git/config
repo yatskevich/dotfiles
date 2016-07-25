@@ -6,6 +6,9 @@
 	autocrlf = input
 [alias]
 	co = checkout
-	hist = log --oneline --graph --decorate --color
+        hist = log --pretty=format:'%C(yellow)%h|%Cred%ad|%Cblue%an|%Cgreen%d %Creset%s' --graph --decorate --color --date=short
+	oldest-ancestor = !zsh -c 'diff --old-line-format= --new-line-format= <(git rev-list --first-parent \"${1:-master}\") <(git rev-list --first-parent \"${2:-HEAD}\") | head -1' -
 [push]
 	default = simple
+[pull]
+	rebase = true

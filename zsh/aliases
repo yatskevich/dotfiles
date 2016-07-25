@@ -33,7 +33,9 @@ alias pag='ps aux | grep'
 
 # tools
 alias cap="bundle exec cap"
-alias knife="bundle exec knife"
+#alias knife="bundle exec knife"
 
 # Docker
-alias dsinit="boot2docker shellinit"
+alias dsh='eval "$(docker-machine env default)"'
+alias d='docker'
+alias dm='docker-machine'
