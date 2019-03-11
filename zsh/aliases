@@ -22,8 +22,13 @@ alias ee="$EDITOR $ZSH/env && reload_env"
 
 # git
 alias g='clear && git status'
-alias gf='git fetch'
 alias gb='git branch'
+alias gf='git fetch --prune'
+alias gfr='git fetch --prune && git rebase origin/master'
+alias gs='git stash'
+alias gsp='git stash pop'
+alias gsl='git stash list'
+alias gp='git push -u'
 
 # OS X
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -39,3 +44,10 @@ alias cap="bundle exec cap"
 alias dsh='eval "$(docker-machine env default)"'
 alias d='docker'
 alias dm='docker-machine'
+alias dim='docker images'
+alias dp='docker ps'
+alias dop='docker system prune -a -f'
+
+# Gradle
+alias gradle=gw
+
