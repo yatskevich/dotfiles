@@ -1,15 +1,12 @@
+antigen use oh-my-zsh
+
 antigen bundle terminalapp
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle autojump
 
 antigen bundle docker
-antigen bundle vagrant
 
 antigen bundle git
 antigen bundle npm
-
-antigen bundle capistrano
-
-antigen bundle knife
 
 antigen apply
