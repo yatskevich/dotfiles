@@ -45,5 +45,6 @@ function setup_zsh {
 }
 
 setup_git
+git submodule update --init
 setup_vim
 setup_zsh
