@@ -25,7 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
 
 # RVM
-source /Users/ivan/.rvm/scripts/rvm
+#source /Users/ivan/.rvm/scripts/rvm
 
 docker-ip() {
   docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
