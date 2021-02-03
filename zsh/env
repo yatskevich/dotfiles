@@ -1,5 +1,9 @@
 export EDITOR=vim
 
+# various tools misbehave when these variables are not set
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 #export SBT_OPTS='-Xms2G -Xmx4G -Xss1M -XX:+CMSClassUnloadingEnabled'
 
@@ -13,9 +17,14 @@ export GOPATH=$HOME/dev/yatskevich/00-research/go
 
 export PATH=$HOMEBREW:$NPM_PATH:$GOPATH/bin:$PATH
 
+# fastlane
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 # python
-export LC_ALL="en_US.UTF-8"
 export PATH="$PATH:/usr/local/opt/python@2/bin"
+
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 use-java () {
     export JAVA_HOME=`/usr/libexec/java_home -v $1`
