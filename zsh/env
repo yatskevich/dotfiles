@@ -15,7 +15,10 @@ NPM_PATH=/usr/local/share/npm/bin
 
 export GOPATH=$HOME/dev/yatskevich/00-research/go
 
-export PATH=$HOMEBREW:$NPM_PATH:$GOPATH/bin:$PATH
+# python
+PYTHON_USER_BASE=$(python3 -m site --user-base)
+
+export PATH=$HOMEBREW:$NPM_PATH:$GOPATH/bin:$PYTHON_USER_BASE/bin:$PATH
 
 # fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
@@ -39,3 +42,6 @@ export NVM_DIR="$HOME/.nvm"
 docker-ip() {
   docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
 }
+
+export JUCE_HOME=/Users/ivan/dev/fractal.audio/JUCE
+export TRACKTION_ENGINE_HOME=/Users/ivan/dev/fractal.audio/tracktion_engine
